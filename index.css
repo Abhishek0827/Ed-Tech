@@ -1007,12 +1007,19 @@ footer ul span{
   }
   #ExploreExamCategoriesMain>h1{
     font-size: large;
+    margin-left:10px ;
+  }
+  #ExploreExamCategories{
+    box-shadow: 0px 0px 10px 0px rgb(207, 202, 202);
   }
   .course1RIGHT {
     display: none;
   }
   #ExploreExamCategoriesLEFT{
     width: 50%;
+    box-shadow: none;
+    background-color: white;
+    border-radius: 0px;
   }
   #ExploreExamCategoriesLEFT button{
     font-size: 10px;
@@ -1021,10 +1028,19 @@ footer ul span{
   .buttonArrow{
     display: none;
   }
+  #ExploreExamCategoriesRIGHT{
+    margin-top: 5px;
+    align-items: center;
+  }
+  .Coursesoptions a{
+    width: 95%;
+    margin: auto;
+  }
   .course1LEFT{
     width: 100%;
     margin:15px 0 0 3px ;
     font-size: 11px;
+    
   }
   #pwcenterlist{
     height: auto;

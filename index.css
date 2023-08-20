@@ -1,0 +1,1120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  height: fit-content;
+  list-style: none;
+  font-family: sans-serif !important;
+}
+body{
+  background-color: whitesmoke;
+}
+#head {
+  position: sticky;
+  top: 1px;
+  z-index: 2;
+}
+nav {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif !important;
+  font-weight: lighter;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0px -10px 20px 1px black;
+}
+.navLeft {
+  width: min(550px, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+#hamburgermenu {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 4px;
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+}
+#hamburgermenu div {
+  border: 1px solid #5a4bda;
+  width: 15px;
+}
+.navLeft a img {
+  margin: 0px 5px;
+  width: 45px;
+}
+#CoursesList {
+  cursor: pointer;
+  width: 120px;
+  height: 45px;
+  border: 1px solid rgb(207, 205, 205);
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: medium;
+  font-weight: 700;
+  color: #5a4bda;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.navLeft ol {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 40px;
+  font-weight: bold;
+  justify-content: space-between;
+  place-items: center;
+  height: 80%;
+}
+.navLeft ol li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.navLeft ol li a {
+  color: #5a4bda;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 90%;
+  word-wrap: break-word;
+}
+.navRight {
+  display: flex;
+  align-items: center;
+}
+#Login {
+  cursor: pointer;
+  color: white;
+  border: 1px solid transparent;
+  background-color: #5a4bda;
+  border-radius: 8px;
+  height: 45px;
+  width: 150px;
+  font-weight: 700;
+  text-shadow: 0px 0px 2px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+}
+#hiddenmenu {
+  color: #5a4bda;
+  font-family: Gilroy-Medium, sans-serif !important;
+  font-weight: 700;
+  font-size: large;
+  display: none;
+}
+#hiddenmenu ol li {
+  border-bottom: 1px solid grey;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 70px;
+  justify-content: space-between;
+}
+.secondlist {
+  color: black;
+  display: none;
+  background-color: white;
+  position: relative;
+  top: -427px;
+  font-size: medium;
+  /* animation: hamburger 2s ease-in-out 1 reverse; */
+}
+@keyframes hamburger {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  
+}
+#slider {
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.slide1 {
+  width: 100%;
+  height: 100%;
+}
+#slider .slide1 img{
+  height: 100%;
+  width: 100%;
+}
+#lowerheader {
+  display: flex;
+  align-items: center;
+  margin-top: -100px;
+}
+#lowerheader1 {
+  /* border: 1px solid blue; */
+  background-color: white;
+  border-radius: 0px 19px 19px 0px;
+  box-shadow: 0px 0px 20px 0px rgb(104, 99, 99);
+  display:flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 5px 10px;
+  width: 30px;
+  height: 200px;
+  position: fixed;
+  bottom: 60px;
+}
+#lowerheader1 img {
+  height: 22px;
+}
+#lowerheader2 {
+  border-radius: 30px;
+  width: min(1100px, 80%);
+  height: 400px;
+  margin: auto;
+  padding: 50px 0px 0px 50px;
+  box-shadow: 0px 5px 20px 0px rgb(104, 99, 99);
+  background-color: white;
+  font-family: sans-serif !important;
+  font-weight: 600;
+  color: rgb(29, 27, 27);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.line0 {
+  display: flex;
+  align-items: center;
+  /* height: 65px; */
+  width: fit-content;
+  font-size: 50px;
+}
+#textChange {
+  margin-left: 10px;
+  color: #5a4bda;
+  border-right: 3px solid #5a4bda;
+}
+.line1 {
+  display: flex;
+  align-items: center;
+  /* height: 65px; */
+  width: fit-content;
+  font-size: 50px;
+  margin: 10px 0px;
+}
+.line2 {
+  font-size: 22px;
+}
+.mobileNo {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+.mobileNo input {
+  font-size: 20px;
+  width: 250px;
+  height: 100%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}
+.line3 {
+  display: flex;
+  gap: 20px;
+}
+.line3 img {
+  height: 50px;
+}
+.mobileappAd {
+  width: 300px;
+  height: 100%;
+  border: 1px solid;
+}
+#ExploreExamCategoriesMain{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width:85%;
+  font-family:sans-serif;
+}
+#ExploreExamCategories{
+  display: flex;
+  justify-content: space-between;
+}
+#ExploreExamCategoriesLEFT{
+  font-family: sans-serif;
+  margin-left: 0px;
+  background-color: rgb(255, 255, 254);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+#ExploreExamCategoriesLEFT button{
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 250px;
+  border-color:transparent;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size:15px;
+  font-weight:600;
+  padding:0px 20px;
+  cursor: pointer;
+}
+.buttonArrow{
+  border-top: 3px solid;
+  border-right: 3px solid;
+  height: 7px;
+  width: 7px;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+#ExploreExamCategoriesRIGHT{font-family: sans-serif;
+  width: 100%;
+}
+.Coursesoptions{
+  width: 100%;
+  gap: 10px;
+  padding-left: 10px;
+  justify-content:start;
+  display: none;
+  flex-wrap: wrap;
+}
+.course1{
+  width: 270px;
+  height: 140px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(207, 202, 202);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 15px 0px 0px 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.course1LEFT{
+  height: 100%;
+  width:130px;
+  font-size:small;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+.course1 div p{
+  color: gray;
+  font-size:15px;
+}
+.course1 button{
+  color:#5a4bda;
+  text-align: start;
+  width: fit-content;
+  background-color: transparent;
+  border: none;  cursor: pointer;
+  font-size:medium;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.course1RIGHT{
+  background-color: rgb(219, 241, 245);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius:50%;
+  transform: translate(25px,30px); 
+}
+.course1RIGHT img{
+  height:95%;
+  transform: translate(-10px,-10px);
+}
+.course1:hover{
+  background-color: rgb(41, 39, 39);
+}
+.course1:hover .course1LEFT h2{
+  color: white;
+  text-shadow: 0px 0px 3px white;
+  background-color: rgb(41, 39, 39);
+}
+#PWcentres{
+  margin: auto;
+  background-image:url("images/center-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 410px;
+  width:100%;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pwcenterlist{
+  margin: auto;
+  /* border: 1px solid black; */
+  background-color: rgb(255, 255, 255);
+  box-shadow:0px  0px 10px 1px rgb(170, 170, 170) ;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width:70%;
+  /* height: 400px; */
+  padding: 20px 80px;
+}
+#pwcenterlist h1{
+  font-size: x-large;
+  text-align: center;
+}
+#centerOptioin{
+
+  display:flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  grid-template-columns: auto auto auto auto;
+  justify-content:space-evenly;
+  width:1000px;
+}
+.centerOptioin1{
+  width: 210px;
+  height: 80px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+.cityCenterImage{
+  width:60px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+.centerOptioin1 h5{
+  font-weight: bold;
+  font-size:small;
+}
+#centerKnowMore{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#5a4bda;
+  color: white;
+  border-radius: 10px;
+}
+#centerKnowMore {
+  font-weight:500;
+  border:transparent;
+  font-size: large;
+  cursor: pointer;
+}
+#lectureCount{
+  background-color: #5a4bda;
+  padding:50px 0px;
+  width: 100%;
+  /* height: 300px; */
+  gap: 50px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#lectureCount1{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+#LearnFromBest{
+  text-align: center;
+
+}
+#LearnFromBest h1{
+  color: #3c3c3c;
+  margin-bottom: 10px;
+}
+#LearnFromBest h1 span{
+  background:linear-gradient(87deg, #5a4bda, #eb427e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#LearnFromBest h3{
+  color: #888;
+  margin-bottom: 20px;
+}
+#LearnFromBestImg{
+  border-radius: 20px;
+  width:85%;
+}
+#WhyPhysicsWallah h1{
+  color: #3c3c3c;
+  text-align: center;
+  font-size: xxx-large;
+  margin-bottom: 10px;
+}
+#WhyPhysicsWallah h1 span{
+  background:linear-gradient(87deg, #5a4bda, #eb427e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#WhyPhysicsWallah h3{
+  color: #888;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#AboutPhysicsWallah{
+  margin: auto;
+  width: 80%;
+  /* display: grid;
+  grid-row-gap:50px ; */
+}
+.Connect{
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+}
+.Connect img{
+  width: 75%;
+}
+.Connect:nth-child(even){
+  transform: rotateX(180deg);
+}
+#AboutPhysicsWallah1{
+  height: 220px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+#AboutPhysicsWallah1:first-child{
+border-radius: 60px 60px 0px 0px;
+}
+#AboutPhysicsWallah1:last-child{
+  border-radius: 0px 0px 60px 60px;
+}
+.AboutPhysicsWallah1Text{
+  width: 70%;
+}
+.AboutPhysicsWallah1Text h4{
+  color: #5a4bda;
+  font-size: x-large;
+  font-weight: 600;
+}
+.AboutPhysicsWallah1Text p{
+  line-height: 30px;
+  font-size: larger;
+  color: #888;
+    font-weight: 200;
+}
+#result{
+  width: 100%;
+}
+#result img{
+  width: 100%;
+}
+#FreeBatch{
+  width: 80%;
+  height: 350px;
+  background-color: white;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#FreeBatchText{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#FreeBatchText h1{
+  font-size: xxx-large;
+}
+#FreeBatchText h1 span{
+    background:linear-gradient(87deg, #5a4bda, #eb427e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#FreeBatchNumber{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px rgb(230, 228, 228);
+  height: 45px;
+  padding-left: 5px;
+}
+#FreeBatchNumber h2{
+  font-weight: 300;
+}
+#FreeBatchNumber input{
+  font-weight: 300;
+   padding-left: 5px;
+  height: 100%;
+ outline: none;
+  border: none;
+  width:100%;
+  font-size: larger;
+}
+#FreeBatch img{
+  height: 90%;
+}
+footer {
+  background-color: #120b1a;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px 0px;
+  color: white;
+  margin-top: 20px;
+}
+footer ul{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+footer ul li a{
+  color:white;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
+footer ul span{
+  color:#5a4bda;
+  font-size: larger;
+}
+@media screen and (max-width: 1340px) {
+  #lowerheader2 {
+    padding: 0px 0px 0px 50px;
+  }
+  .line0,
+  .line1 {
+    font-size: 40px;
+    margin: 0px 0px;
+  }
+  .line2 {
+    font-size: 15px;
+  }
+  .mobileNo {
+    width: 400px;
+    height: 45px;
+    font-size: 20px;
+  }
+  .mobileNo input {
+    font-size: 20px;
+  }
+  .mobileNo img {
+    width: 40px;
+  }
+  .line3 img {
+    height: 40px;
+  }
+  .mobileappAd {
+    width: 250px;
+    height: 100%;
+  }
+  #centerOptioin{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1134px) {
+  .navLeft ol {
+    grid-column-gap: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Coursesoptions {
+    padding-left: 0px;
+    max-height: 700px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-width: 940px) {
+  .navLeft a img {
+    height: 50px;
+    width: 50px;
+  }
+  #CoursesList {
+    font-size: normal;
+  }
+  .navLeft ol {
+    grid-column-gap: 5px;
+  }
+  #lowerheader1 {
+    display: none;
+  }
+  .mobileappAd {
+    display: none;
+  }
+  #centerssection{
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+  box-shadow:0px  0px 10px 1px rgb(170, 170, 170);
+  border-radius: 20px;
+  width: 95%;
+  }
+  #pwcenterlist{
+    box-shadow:0px  0px 0px 0px ;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  #AboutPhysicsWallah{
+    width: 85%;
+  }
+  #AboutPhysicsWallah1{
+    justify-content: center;
+  }
+  #AboutPhysicsWallah1 img{
+    width:150px;
+  }
+  .AboutPhysicsWallah1Text{
+    width: 100%;
+  }
+  .AboutPhysicsWallah1Text h4{
+    font-size: larger;
+  }
+  .AboutPhysicsWallah1Text p{
+    font-size: large;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 834px) {
+  nav {
+    height: 80px;
+    justify-content: space-around;
+  }
+  .navLeft {
+    justify-content: start;
+    height: 70%;
+  }
+  .navLeft ol {
+    display: none;
+  }
+  .navLeft img {
+    height: 40px;
+  }
+  #hamburgermenu {
+    display: grid;
+  }
+  #CoursesList {
+    display: none;
+  }
+  #PWstore {
+    display: none;
+  }
+  #Login {
+    height: 40px;
+    width: 140px;
+    font-size: small;
+    text-shadow: 0px 0px 0px white;
+    font-weight: lighter;
+  }  #slider {
+    height: 350px;
+  }
+  #centerOptioin{
+    width: 100%;
+  }
+  #AboutPhysicsWallah1{
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  #AboutPhysicsWallah1:first-child{
+    border-radius: 20px 20px 0px 0px;
+    }
+    #AboutPhysicsWallah1:last-child{
+      border-radius: 0px 0px 20px 20px;
+    }
+  #AboutPhysicsWallah1:last-child{
+    padding-bottom:20px ;
+  }
+  #AboutPhysicsWallah1 img{
+    order: 0;
+  }
+  .AboutPhysicsWallah1Text
+  {
+    order: 1;
+  }
+  .AboutPhysicsWallah1Text h4{
+    margin: 7px;
+  }
+  .AboutPhysicsWallah1Text p{
+    font-size: medium;
+    margin: 7px;
+    line-height: 17px;
+  }
+  #FreeBatchText{
+    text-align: center;
+  }
+  #FreeBatch>img{
+    display:none;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  footer ul{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #lowerheader2 {
+    padding: 0px 0px 0px 15px;
+    border-radius: 10px;
+  }
+  .line0,
+  .line1 {
+    font-size: 35px;
+  }
+  #lectureTEXT{
+    display: grid;
+    grid-row-gap:20px;
+  }
+  #lectureCount h3{
+    font-size:15px;
+  }
+  #lectureCount1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    grid-row-gap:50px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  #lowerheader2 {
+    padding: 0px 0px 0px 20px;
+    height: 300px;
+    width: 90%;
+  }
+  .line0,
+  .line1 {
+    font-size: 30px;
+  }
+  .line2 {
+    font-size: 15px;
+  }
+  .mobileNo {
+    width: 300px;
+    height: 45px;
+    font-size: 15px;
+    margin: 20px 0px;
+  }
+  .mobileNo input {
+    font-size: 15px;
+    width: 200px;
+  }
+  .mobileNo img {
+    width: 30px;
+  }
+  .line3 img {
+    height: 25px;
+  }
+  #ExploreExamCategoriesMain {
+    width: 98%;
+  }
+  .Coursesoptions {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .course1 {
+    height: 120px;
+    width: 98%;
+    padding: 5px 0 0 5px;
+  }
+  #ExploreExamCategoriesLEFT button {
+    width: 150px;
+    text-align: start;
+    padding: 0px 0px;
+  }
+  .course1LEFT {
+    font-size: 12px;
+  }
+  .centerOptioin1{
+    width:170px;
+  }
+  #FreeBatchText h1{
+    font-size: xx-large;
+  }
+}
+@media screen and (max-width: 500px) {
+  #hiddenmenu ol li {
+    padding: 0px 40px;
+    font-size: medium;
+  }
+  #slider {
+    height: 250px;
+  }
+
+  #lowerheader {
+    margin-top: -60px;
+  }
+  #lowerheader2 {
+    padding: 50px 0px 0px 10px;
+    height: 300px;
+    align-items: start;
+  }
+  #lowerhead2one {
+    width: 100%;
+  }
+  .line0,
+  .line1 {
+    font-size: 25px;
+  }
+  .line2 {
+    font-size: 15px;
+    margin: 15px 0px 40px 0px;
+  }
+  .mobileNo {
+    width: 90%;
+    height: 45px;
+    font-size: 15px;
+    margin: 20px 0px;
+  }
+  .mobileNo input {
+    font-size: 15px;
+    width: 200px;
+  }
+  .mobileNo img {
+    width: 30px;
+  }
+  .line3 {
+    justify-content: center;
+  }
+  .line3 img {
+    height: 35px;
+  }
+  .course1RIGHT {
+    height: 120px;
+    width: 120px;
+  }
+  #PWcentres{
+    height: 200px;
+   gap: 20px;
+  }
+  #PWcentres h1,#PWcentres h2{
+    font-size:17px;
+    text-align: center;
+  }
+  #PWcentres h3{
+    font-size: 13px;
+  }
+  #WhyPhysicsWallah h1{
+    font-size: xx-large;
+  }
+  #WhyPhysicsWallah h3{
+    font-size: medium;
+  }
+  #FreeBatchNumber{
+    width: 95%;
+  }
+  #FreeBatchNumber h2{
+    font-size: medium;
+  }
+  #FreeBatchNumber img{
+    height: 30px;
+  }
+  footer{
+    font-size: small;
+  }
+}
+@media screen and (max-width: 450px) {
+  nav{
+    height: 60px;
+  }
+  #Login {
+    font-size: 14px;
+    height: 35px;
+    width: 110px;
+  }
+  .navLeft a img {
+    height: 40px;
+    width: 40px;
+  }
+  #lowerheader2 {
+    padding: 30px 0px 0px 10px;
+    align-items: start;
+    width: 90%;
+    height: 200px;
+  }
+  .line0 {
+    flex-direction: column;
+    align-items: start;
+    height: 40px;
+    font-size:large;
+  }
+  #textChange{
+    margin: 0px;
+  }
+  .line1{
+    font-size: large;
+  }
+  .line2{
+    font-size:small;
+    margin: 5px 0 10px 0;
+  }
+  .mobileNo {
+    margin: 0px 0;
+  }
+  .line3 {
+    justify-content: start;
+  }
+  .line3 img {
+    height: 25px;
+  }
+  #ExploreExamCategoriesMain>h1{
+    font-size: large;
+  }
+  .course1RIGHT {
+    display: none;
+  }
+  #ExploreExamCategoriesLEFT{
+    width: 50%;
+  }
+  #ExploreExamCategoriesLEFT button{
+    font-size: 10px;
+    width:100%;
+  }
+  .buttonArrow{
+    display: none;
+  }
+  .course1LEFT{
+    width: 100%;
+    margin:15px 0 0 3px ;
+    font-size: 11px;
+  }
+  #pwcenterlist{
+    height: auto;
+  }
+  .centerOptioin1{
+    width: 150px;
+    height: 60px;
+  }
+  .cityCenterImage{
+    width: 50px;
+  }
+ #lectureCount h1:nth-child(1){
+    font-size: 20px;
+  } 
+  #FreeBatch{
+    width: 90%;
+    height:200px;
+    padding: 40px 0px;
+  }
+  #FreeBatchText{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 354px) {
+
+  #textChange {
+    margin-left: 0px;
+    border-right: 1px solid #5a4bda;
+  }
+  .mobileNo input {
+    width: 150px;
+    margin-left: 0px;
+  }
+  #PWcentres{
+    width: 90%;
+    border-radius: 10px;
+  }
+  #PWcentres h3{
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  #pwcenterlist h1{
+    font-size: large;
+  }
+  #centerOptioin{
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .centerOptioin1{
+    width: 130px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .cityCenterImage{
+    width: 40px;
+  }
+  .centerOptioin1 h5{
+    font-size:11px;
+  }
+  #LearnFromBest h1{
+    font-size: 25px;
+  }
+  #LearnFromBest h3{
+    font-size:15px;
+  }
+  #FreeBatch{
+    height: 200px;
+  }
+  #FreeBatchText h1{
+    font-size: x-large;
+  }
+  #FreeBatchText section p{
+    font-size:small;
+  }
+  #FreeBatchNumber{
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #hiddenmenu ol li {
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+  .centerOptioin1{
+    width: 120px;
+  }
+  .cityCenterImage{
+    margin: 0px 5px;
+  }
+}
